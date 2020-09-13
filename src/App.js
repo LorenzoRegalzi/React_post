@@ -11,15 +11,15 @@ function App() {                                                              //
       
       <div>
       <h1>Reactbook</h1>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <Post author='Mary' text='good morning'/>
+      <Post author='Jey' text='good morning'/>
+      <Post author='Frank' text='good morning'/>
+      <Post author='Robert' text='good morning'/>
+      <Post author='Kay' text='good morning'/>
+      <Post author='Paul' text='good morning'/>
+      <Post author='David' text='good morning'/>
+      <Post author='Willy' text='good morning'/>
+      <Post author='Laurent' text='good morning'/>
       </div>
    
   )
