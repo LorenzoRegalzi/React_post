@@ -1,26 +1,26 @@
+//importare React 
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Test from './Test';
+import Post from './Post';
 
+//we create this function that allow to write html code in js
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      
+      <div>
+      <h1>Home</h1>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      </div>
+   
+  )
 }
 
 export default App;
