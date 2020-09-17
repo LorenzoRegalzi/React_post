@@ -24,6 +24,8 @@ import Post from './Post';
    
 //   )
 // }
+
+  
 // class App extends React.Component {
      //CLASS COMPONENT
 //   state = {
@@ -44,18 +46,52 @@ import Post from './Post';
 //   }
 // }
 
+
+
+//HOOKS
+//example of fun that increment at the click of button
+// alert: add te set at the import of React
+
+// function App() {
+//     //FUNCTION COMPONENT with state
+//     const [count, setCount] = useState(0);
+//     const increment = () => {
+//       setCount(count + 1)
+//     }
+//     return (
+//       <div>
+//       <h3>counter : {count}</h3>
+//       <button onClick={increment} >aumenta</button>
+//       </div>
+//     );
+// }
+
+
+
+
+
+
+
+
+
 function App() {
-    //FUNCTION COMPONENT
-    const [count, setCount] = useState(0);
-    const increment = () => {
-      setCount(count + 1)
-    }
-    return (
-      <div>
-      <h3>counter : {count}</h3>
-      <button onClick={increment} >aumenta</button>
-      </div>
-    );
+
+  const [posts, setPosts] = useState([
+    {author:'Mary', description:'today testing day'},
+    {author:'Joy', description:'today react testing day'},
+    {author:'Marc', description:'today easy day'},
+  ]);
+
+  return (
+    <div className='Posts'> 
+      {posts.map((post, index) => (
+          <Post key={index} author= {post.author} description={post.description}/>
+
+
+      ))}                             
+    </div>
+  );
 }
+
 
 export default App;
